@@ -1,0 +1,27 @@
+// To find the greatest number of three given numbers
+
+# include <iostream>
+using namespace std;
+int main()
+{
+    float x,y,z;
+    cout<<"Enter first number:";
+    cin>>x;
+    cout<<"Enter second number:";
+    cin>>y;
+    cout<<"Enter third number:";
+    cin>>z;
+    if(x>=y && x>=z)
+    {
+        cout<<x<<" is greatest ";
+    }
+    else if(y>=x && y>=z)
+    {
+        cout<<y<<" is greatest ";
+    }
+    else
+    {
+        cout<<z<<" is greatest ";
+    }
+    return 0;
+}
