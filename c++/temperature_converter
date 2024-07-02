@@ -1,0 +1,36 @@
+//to convert temperature from farenheit to celsius,celsius to farenheit,celsius to kelvin,kelvin to celcius
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int choice;
+    float Temp;
+    cout<<"\n 1. celsius to kelvin";
+    cout<<"\n 2. kelvin to celsius";
+    cout<<"\n 3. farenheit to celsius";
+    cout<<"\n 4. celsius to farenheit";
+    cout<<"\n Enter your choice: ";
+    cin>>choice;
+    cout<<"\n Enter the temperature: ";
+    cin>>Temp;
+    switch(choice)
+    {
+        case 1:
+          cout<<" Temperature in celsius: "<<Temp;
+          cout<<" Temperature in kelvin: "<<Temp+273.15;
+          break;
+        case 2:
+          cout<<" Temperature in kelvin: "<<Temp;
+          cout<<" Temperature in celsius: "<<Temp-273.15;
+          break;
+        case 3:
+          cout<<" Temperature in fahrenhit: "<<Temp;
+          cout<<" Temperature in celsius: "<<(Temp-32)*5/9;
+          break;
+        case 4:
+          cout<<" Temperature in celcius: "<<Temp;
+          cout<<" Temperature in fahrenheit: "<<(Temp*9/5)+32;
+          break;
+    }
+}
