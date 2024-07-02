@@ -1,0 +1,27 @@
+// to find factorial of a number
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,i,fact=1;
+    cout<<"Enter the number which you have to find factorial: ";
+    cin>>n;
+    if (n>0)
+    {
+        for(i=2;i<=n;i++)
+        {
+            fact=fact*i;  
+        }
+        cout<<"factorial of " <<n <<" is " <<fact;
+    }
+    else if (n<0)
+    {
+        cout<<"factorial does not exist";
+    }
+    else 
+    {
+        cout<<"factorial of 0 is 1";
+    }
+    return 0;
+}
