@@ -1,0 +1,19 @@
+// to find the number to its power
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,pow;
+    cout<<"Enter the number: ";
+    cin>>n;
+    cout<<"Enter the power: ";
+    cin>>pow;
+    int i,f=1;
+    for(i=0;i<pow;i++)
+    {
+        f=f*n;
+    }
+    cout<<n <<" to the power " <<pow <<" is " <<f;
+    return 0;
+}
